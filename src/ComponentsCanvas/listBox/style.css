@@ -1,0 +1,21 @@
+.list-box{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-box > div:nth-child(2){
+    text-align: right;
+}
+
+.list-box > div h3{
+    font-size: 60px;
+    font-weight: 900;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px solid white;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+}
+
+.list-box > div h3:nth-child(2){
+    margin-top: 0.5em;
+}

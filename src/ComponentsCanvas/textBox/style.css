@@ -1,0 +1,19 @@
+.text-box{
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-block: 2px solid red;
+}
+
+.text-box:nth-child(2){
+  align-items: flex-end;
+}
+
+.text-box > div h1{
+  font-family: 'Kelsi 1', sans-serif;
+  font-size: 150px;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: 1px solid #b702ff;
+  -webkit-text-stroke-color: #b702ff;
+  -webkit-text-stroke-width: 1px;
+}
