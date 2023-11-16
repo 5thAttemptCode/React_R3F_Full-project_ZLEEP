@@ -1,0 +1,74 @@
+.about{
+    color: white;
+    padding: 15vh 12vh;
+    overflow: hidden;
+}
+
+.about h1{
+    font-size: 80px;
+    line-height: 1;
+    text-align: justify;
+}
+
+.about h1 span{
+    color: black;
+}
+
+.about h2{
+    font-size: 35px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.about h4{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.about .box{
+    position: relative;
+    padding-block: 12vh;
+}
+
+.about .box img{
+    position: absolute;
+}
+
+.about .one, .four{
+    padding-right: 60%;
+}
+
+.about .one img{
+    right: 10%;
+    top: 0;
+    rotate: -30deg;
+}
+
+.about .two{
+    padding-inline: 30%;
+    background: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 100%;
+    border: 2px solid white;
+    z-index: 10;
+}
+
+.about .three{
+    padding-left: 60%;
+}
+
+.about .three img{
+    left: 20%;
+    top: -10%;
+    rotate: 30deg;
+}
+
+.about .four{
+    padding-bottom: 20vh;
+}
+
+.about .four img{
+    right: 20%;
+    top: -10%;
+    rotate: -10deg;
+}
