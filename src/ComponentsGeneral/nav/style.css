@@ -1,0 +1,25 @@
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 3vw;
+    z-index: 1000;
+}
+
+nav a{
+    color: white;
+    font-size: 20px;
+}
+
+nav div{
+    display: flex;
+    gap: 20px
+}
+
+.logo{
+    font-size: 35px;
+    font-family: 'Kelsi 1', sans-serif;
+}
