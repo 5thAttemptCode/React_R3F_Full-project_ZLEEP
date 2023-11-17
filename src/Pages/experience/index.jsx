@@ -9,8 +9,6 @@ import Scene from '../../ComponentsCanvas/scene/index'
 
 export default function Experience() {
 
-
-
   return (
     <>
       <div className='canvas'>
@@ -24,3 +22,4 @@ export default function Experience() {
     </>
   )
 }
+
