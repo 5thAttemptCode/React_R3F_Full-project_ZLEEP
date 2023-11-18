@@ -44,8 +44,8 @@ export default function Login() {
   //                       Important to give permission to use this credentials
   
   return (
-    <div className='form-wrapper'>
-      <div className="form-container login">
+    <div className='form-wrapper section section-wrapper'>
+      <div className="form-container login content-box">
         <h2>Login to your account</h2>
         <form onSubmit={handleSubmit}>
           <div role="group"> 
@@ -73,9 +73,9 @@ export default function Login() {
               type="password" 
               placeholder='password' />
           </div>
-          <button>Submit</button>
+          <button>Login</button>
         </form>
-        <p>Don't have an account yet? Click &nbsp;<Link className='underline' to="/signup" element={<SignUp />}>here</Link></p>
+        <p>Don't have an account yet? Click <Link className='underline' to="/signup" element={<SignUp />}>here</Link></p>
       </div>
     </div>
   )

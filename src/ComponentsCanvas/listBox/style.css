@@ -3,10 +3,6 @@
     align-items: center;
 }
 
-.list-box > div:nth-child(2){
-    text-align: right;
-}
-
 .list-box > div h3{
     font-size: 60px;
     font-weight: 900;

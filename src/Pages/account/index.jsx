@@ -3,6 +3,8 @@ import './style.css'
 
 import { UserAuth } from '../../context/AuthContext'
 import { Link, useNavigate } from 'react-router-dom'
+import CustomizedRating from '../../ComponentsGeneral/rating/index'
+
 
 
 export default function Account() {
@@ -20,12 +22,13 @@ export default function Account() {
   }
 
   return (
-    <div className='account-wrapper'>
+    <div className='account-wrapper section section-wrapper'>
       <div className="account-container">
         <p><span>Account email: </span>{user && user.email}</p>
         <button onClick={handleLogout}>Logout</button>
       </div>
       <Link to="/">Check out ZLEEP</Link>
+      <CustomizedRating />
     </div>
   )
 }

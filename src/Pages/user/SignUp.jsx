@@ -29,9 +29,9 @@ export default function SignUp() {
   };
 
   return (
-    <div className='form-wrapper'>
-      <div className="form-container signup">
-        <h2>Sign up for your free account</h2>
+    <div className='form-wrapper section section-wrapper'>
+      <div className="form-container signup content-box">
+        <h2>Sign up for new account</h2>
         <form onSubmit={handleSubmit}>
           <div>
             <label>Enter your email</label>
@@ -41,9 +41,9 @@ export default function SignUp() {
             <label>Enter your password</label>
             <input onChange={(e) => setPassword(e.target.value)} type="password" placeholder='password' />
           </div>
-          <button>Submit</button>
+          <button>Sign up</button>
         </form>
-        <p>Already have an account? Login &nbsp;<Link className='underline' to="/login" element={<Login />}>here</Link></p>
+        <p>Already have an account? Login <Link className='underline' to="/login" element={<Login />}>here</Link></p>
       </div>
     </div>
   )

@@ -7,43 +7,12 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  list-style: none;
-}
-
-.canvas{
-  position: fixed;
-  top: 0;
-  height: 100vh;
-  width: 100%;
-}
-
-.section{
-  background: linear-gradient(#310047, #9614d0, #e2abfb) fixed;
-}
-
-.scene-box{
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  padding-inline: 3vw;
   color: white;
 }
 
-.scene-box > div{
-  width: 35%;
-}
-
-.scene-box > div h2{
-  font-size: 50px;
-  font-weight: 400;
-}
-
-.scene-box > div p,
-.scene-box > div li{
-  font-size: 22px;
-  margin-top: 1em;
-  line-height: 1.5;
+::selection{
+  background: white;
+  color: black;
 }
 
 ::-webkit-scrollbar{
@@ -57,4 +26,75 @@
 ::-webkit-scrollbar-thumb{
   background: white;
   height: 20%;
+}
+
+h2{
+  font-size: clamp(1.375rem, 0.3594rem + 3.25vw, 2.1875rem);
+  font-weight: 400;
+}
+
+h4{
+  font-weight: 300;
+}
+
+
+/*_______________________________________*/
+.canvas{
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.section{
+  padding-block: 10vh;
+  background-color:hsla(280,100%,16%,1);
+  background-image:
+    radial-gradient(at 40% 20%, hsla(277,100%,33%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, hsla(287,67%,11%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(288,42%,21%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, hsla(289,100%,20%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(279,100%,6%,1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(268,100%,22%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(270,100%,10%,1) 0px, transparent 50%);
+}
+
+.section-wrapper{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-box{
+  padding-block: 20px;
+  padding-inline: clamp(0.625rem, -0.1563rem + 2.5vw, 1.25rem);
+  border-radius: 20px;
+  background: rgb(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border: 2px solid white;
+}
+
+
+/*_______________________________________*/
+.scene-box{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding-inline: 3vw;
+  color: white;
+}
+
+.scene-box > div{
+  width: 35%;
+}
+
+.scene-box > div p,
+.scene-box > div li{
+  font-size: 22px;
+  margin-top: 1em;
+  line-height: 1.5;
 }
