@@ -6,6 +6,7 @@ import BuyButton from '../../ComponentsGeneral/buyButton'
 export default function Checkout() {
   return (
     <div className='checkout section'>
+      <h3>THE ULTIMATE <br /> SLEEP SOLUTION</h3>
       <div>
         <Subscription
           title="Single Purchase"
@@ -20,7 +21,7 @@ export default function Checkout() {
           itemOne="One bottle e/ month"
           itemTwo="cancel anytime"
           itemThree="Zleep membership*"
-          star="*Zleep membership includes FREE DELIVERY, weekly updates on scientific
+          asterix="*Zleep membership includes FREE DELIVERY, weekly updates on scientific
           CBD news, exclusive and early access to upcoming products including a 10%
           discount, and a surprise gift once a year. "
           />

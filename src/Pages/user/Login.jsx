@@ -39,10 +39,9 @@ export default function Login() {
       setPassword("")
     }
   }
-
-  //role="group" line 49: //Accessible Rich Internet Applications (ARIA). 
-  //                       Important to give permission to use this credentials
   
+  //role="group" line 66: //Accessible Rich Internet Applications (ARIA). Important to give permission to use this credentials
+                       
   return (
     <div className='form-wrapper section section-wrapper'>
       <div className="form-container login content-box">

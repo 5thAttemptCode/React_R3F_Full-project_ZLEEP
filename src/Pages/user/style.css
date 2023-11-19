@@ -1,8 +1,8 @@
-.form-wrapper >  .form-container{
+.form-wrapper > .form-container{
     max-width: 320px;
 }
 
-.form-wrapper >  .form-container > h2{
+.form-wrapper > .form-container > h2{
     margin-bottom: 10px;
 }
 

@@ -24,11 +24,18 @@ export default function Account() {
   return (
     <div className='account-wrapper section section-wrapper'>
       <div className="account-container">
-        <p><span>Account email: </span>{user && user.email}</p>
-        <button onClick={handleLogout}>Logout</button>
+        <div>
+          <div className='content-box'>
+            <p><span>Account email: </span>{user && user.email}</p>
+            <br />
+            <button onClick={handleLogout}>Logout</button>
+          </div>   
+          
+          <br />
+          <Link to="/">Check out ZLEEP</Link>
+        </div>
+        <CustomizedRating />
       </div>
-      <Link to="/">Check out ZLEEP</Link>
-      <CustomizedRating />
     </div>
   )
 }

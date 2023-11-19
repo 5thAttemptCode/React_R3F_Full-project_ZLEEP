@@ -18,7 +18,7 @@ export default function Subscription(props) {
           <li>{props.itemTwo}</li>
           <li>{props.itemThree}</li>
         </div>
-        <p className='star'>{props.star}</p>
+        <p className='asterix'>{props.asterix}</p>
         <div>
           <input type="radio" name="subscription" value={props.title} 
                 onChange={e => setSelected(e.target.value)}

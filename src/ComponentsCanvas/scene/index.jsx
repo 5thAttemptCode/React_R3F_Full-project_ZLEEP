@@ -46,11 +46,11 @@ export default function Scene() {
         />
 
         <ListBox 
-          title="What we put in"
+          title="What we put in:"
           items={["CBD", "Turmeric", "Zinc"]}
           titleTwo="Why it's good for You"
-          itemsLi={["01. Sleep improvement", "02. Neuroprotective properties", 
-                    "03. Menthal health imrovement", "04. Natural pain relief"]}
+          itemsLi={["01. Sleep improvement 💤​", "02. Neuroprotective properties 🥷🏽​​", 
+                    "03. Menthal health imrovement ❤️‍🩹​", "04. Natural pain relief 💪"]}
         /> 
 
         <TextBox 
