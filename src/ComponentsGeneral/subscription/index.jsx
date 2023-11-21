@@ -1,10 +1,7 @@
-import React, { useState } from 'react'
-import "./style.css"
-
+import React from 'react';
+import "./style.css";
 
 export default function Subscription(props) {
-
-  const [selected, setSelected] = useState('');
 
   return (
     <div className="wrapper">
@@ -21,11 +18,11 @@ export default function Subscription(props) {
         <p className='asterix'>{props.asterix}</p>
         <div>
           <input type="radio" name="subscription" value={props.title} 
-                onChange={e => setSelected(e.target.value)}
-                aria-label={`Select ${props.title} subscription`} />
+            onChange={() => props.setSelected(props.title)}
+            aria-label={`Select ${props.title} subscription`} />
           <label htmlFor={props.title}> {props.title}</label>
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -3,7 +3,6 @@ import './style.css'
 
 import { Link, useNavigate } from 'react-router-dom'
 import { UserAuth } from '../../context/AuthContext'
-
 import SignUp from './SignUp'
 
 

@@ -1,14 +1,15 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Experience from './Pages/experience/index'
-import About from './Pages/about/index'
-import Checkout from './Pages/checkout/index'
-import Nav from './ComponentsGeneral/nav/index'
-import Login from './Pages/user/Login'
-import SignUp from './Pages/user/SignUp'
+
 import { AuthContextProvider } from './context/AuthContext'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import About from './Pages/about/index'
 import Account from './Pages/account'
+import Checkout from './Pages/checkout/index'
+import Experience from './Pages/experience/index'
+import Login from './Pages/user/Login'
+import Nav from './ComponentsGeneral/nav/index'
 import ProtectedRoute from './utils/ProtectedRoute'
+import SignUp from './Pages/user/SignUp'
 
 
 export default function App() {

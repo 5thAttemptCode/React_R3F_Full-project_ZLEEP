@@ -1,0 +1,9 @@
+.text-box{
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.text-box:nth-child(2){
+  align-items: flex-end;
+}

@@ -6,19 +6,18 @@ import { Link, useNavigate } from 'react-router-dom'
 import CustomizedRating from '../../ComponentsGeneral/rating/index'
 
 
-
 export default function Account() {
   
   const { user, logout } = UserAuth()
   const navigate = useNavigate()
 
   const handleLogout = async () => {
-      try {
-          await logout()
-          navigate("/")
-      } catch (e) {
-          console.log(e.message)
-      }
+    try {
+      await logout()
+      navigate("/")
+    } catch (e) {
+      console.log(e.message)
+    }
   }
 
   return (
@@ -30,7 +29,6 @@ export default function Account() {
             <br />
             <button onClick={handleLogout}>Logout</button>
           </div>   
-          
           <br />
           <Link to="/">Check out ZLEEP</Link>
         </div>

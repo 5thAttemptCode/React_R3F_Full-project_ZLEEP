@@ -1,6 +1,9 @@
 import React from 'react'
 import "./style.css"
 
+import { Link } from 'react-router-dom'
+import { ArrowUpRight } from 'phosphor-react'
+
 
 const HeadingText = (props) => {
   return <h1>{props.h1}</h1>
@@ -9,6 +12,7 @@ const HeadingText = (props) => {
 const AboutText = (props) => {
   return <h2>{props.h2}</h2>
 }
+
 
 export default function About() {
   return (
@@ -40,6 +44,8 @@ export default function About() {
         h2="Deliciously vegan, gluten- and sugar-free. We believe that great sleep should be accessible to everyone. That's why our CBD gummies are vegan-friendly, 
         gluten-free, and sugar-free. "
       />
+
+      <Link to="/checkout"><h1>GET <br /> ZLEEP<ArrowUpRight /></h1></Link>
     </div>
   )
 }

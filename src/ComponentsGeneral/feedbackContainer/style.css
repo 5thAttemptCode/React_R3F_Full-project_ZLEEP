@@ -1,0 +1,42 @@
+.feedback-container{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;  
+    flex-wrap: wrap; 
+    align-content: flex-end;
+    gap: 20px;
+    padding: 3vw;
+}
+
+.feedback-container > h2{
+    position: absolute;
+    top: 0;
+    left: 3vw;
+}
+
+.feedback-box{
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+    background: linear-gradient(91.7deg, rgb(50, 25, 79, 0.7) -4.3%, rgb(122, 101, 149, 0.7) 101.8%);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 2px solid #ff00fb;
+    transition: all 0.3s;
+}
+
+.feedback-box:nth-child(even){
+    rotate: 7deg;
+}
+
+.feedback-box:nth-child(3n){
+    rotate: -5deg;
+}
+
+@media(max-width: 500px){
+    .feedback-container{
+        justify-content: center;
+        align-items: center;
+    }
+}

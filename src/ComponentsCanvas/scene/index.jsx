@@ -1,12 +1,18 @@
-import React, { useRef } from 'react'
-import TextBox from '../textBox'
+import React, { useRef, useState, useEffect } from 'react'
+
 import { Zleep } from '../gltfComponent/index'
 import { useFrame } from '@react-three/fiber'
 import { PerspectiveCamera, Center, ScrollControls, useScroll, Html } from '@react-three/drei'
-import ListBox from '../listBox'
+import ListBox from '../../ComponentsGeneral/listBox'
+import FeedbackContainer from '../../ComponentsGeneral/feedbackContainer'
+import TextBox from '../../ComponentsGeneral/textBox'
+import TheEnd from '../../ComponentsGeneral/theEnd'
+import { useNavigate } from 'react-router-dom'
+
 
 
 const Bottle = () => {
+
   const bottleRef = useRef()
   const scroll = useScroll()
 
@@ -23,9 +29,31 @@ const Bottle = () => {
 
 export default function Scene() {
 
+  const navigate = useNavigate()
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+  // Effect for window resize event
+  useEffect(() => {
+    // Handler to call on window resize
+    function handleResize() {
+      // Set window width to new window size
+      setWindowWidth(window.innerWidth)
+    }
+    // Subscribe to window resize events
+    window.addEventListener('resize', handleResize)
+    // Call handler right away so state gets updated with initial window width
+    handleResize()
+    // Unsubscribe from events when cleaning up
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, []) // Empty array ensures that this effect runs on mount and unmount.
+
+  const mobileView = windowWidth < 768;
+
   return (
     <>
-      <PerspectiveCamera position={[0, 0, 3]} fov={30} makeDefault />
+      <PerspectiveCamera position={[0, 0, 3]} fov={mobileView ? 55 : 30} makeDefault />
       <ScrollControls pages={5}>
         <Center>
           <Bottle />
@@ -59,6 +87,10 @@ export default function Scene() {
             and wake up feeling energized for the day ahead. Experience the transformative 
             power of deep sleep and unlock true vitality for your body and mind."
         />
+
+        <FeedbackContainer />
+
+        <TheEnd navigate={navigate} />
       </Html>
     </>
   )

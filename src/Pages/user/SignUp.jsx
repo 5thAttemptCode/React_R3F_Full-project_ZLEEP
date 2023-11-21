@@ -3,7 +3,6 @@ import './style.css'
 
 import { Link, useNavigate } from 'react-router-dom'
 import { UserAuth } from '../../context/AuthContext'
-
 import Login from './Login'
 
 
@@ -35,11 +34,11 @@ export default function SignUp() {
         <form onSubmit={handleSubmit}>
           <div>
             <label>Enter your email</label>
-            <input onChange={(e) => setEmail(e.target.value)} type="text" placeholder='email' />
+            <input onChange={(e) => setEmail(e.target.value)} required type="text" placeholder='email' />
           </div>
           <div>
             <label>Enter your password</label>
-            <input onChange={(e) => setPassword(e.target.value)} type="password" placeholder='password' />
+            <input onChange={(e) => setPassword(e.target.value)} required type="password" placeholder='password' />
           </div>
           <button>Sign up</button>
         </form>

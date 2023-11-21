@@ -10,7 +10,7 @@ nav{
 }
 
 nav a{
-    color: white;
+    color: var(--main-color);
     font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
 }
 

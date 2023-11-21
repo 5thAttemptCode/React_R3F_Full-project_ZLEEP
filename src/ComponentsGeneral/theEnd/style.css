@@ -1,0 +1,7 @@
+.the-end {
+    backdrop-filter: blur(10px);
+}
+
+.the-end > div h1{
+    cursor: pointer;
+}
