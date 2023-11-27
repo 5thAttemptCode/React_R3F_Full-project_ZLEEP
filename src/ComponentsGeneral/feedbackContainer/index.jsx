@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './style.css'
 
 import { collection, getDocs } from 'firebase/firestore'
-import { db } from '../../utils/firebase.config'
+import { db } from '@/utils/firebase.config'
 import { Rating } from '@mui/material'
 
 

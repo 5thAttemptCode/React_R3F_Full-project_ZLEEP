@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import './style.css'
 
-import Rating from '@mui/material/Rating'
-import Stack from '@mui/material/Stack'
-import { auth, db } from '../../utils/firebase.config'
 import { useNavigate } from 'react-router-dom'
 import { addDoc, collection } from 'firebase/firestore'
+import Rating from '@mui/material/Rating'
+import Stack from '@mui/material/Stack'
+import { auth, db } from '@/utils/firebase.config'
 
 
 const RatingSize = () => {

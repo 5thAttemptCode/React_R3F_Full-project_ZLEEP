@@ -2,9 +2,9 @@ import React, { Suspense, useState } from 'react'
 
 import { Canvas } from '@react-three/fiber'
 import { Sparkles, Stars } from '@react-three/drei'
-import Background from '../../ComponentsCanvas/background/index'
-import Scene from '../../ComponentsCanvas/scene/index'
-import LoadingScreen from '../../ComponentsCanvas/loadingscreen'
+import Background from '@/ComponentsCanvas/background/index'
+import Scene from '@/ComponentsCanvas/scene/index'
+import LoadingScreen from '@/ComponentsCanvas/loadingscreen'
 
 
 export default function Experience() {

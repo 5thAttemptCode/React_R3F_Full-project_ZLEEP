@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react'
 import "./style.css"
 
-import { getAuth, onAuthStateChanged } from 'firebase/auth'
-import Subscription from '../../ComponentsGeneral/subscription/index'
 import { Link } from 'react-router-dom'
+import { getAuth, onAuthStateChanged } from 'firebase/auth'
+import Subscription from '@/ComponentsGeneral/subscription/index'
 
 
 export default function Checkout() {

@@ -1,9 +1,9 @@
 import React from 'react'
 import './style.css'
 
-import { UserAuth } from '../../context/AuthContext'
+import { UserAuth } from '@/context/AuthContext'
 import { Link, useNavigate } from 'react-router-dom'
-import CustomizedRating from '../../ComponentsGeneral/rating/index'
+import CustomizedRating from '@/ComponentsGeneral/rating/index'
 
 
 export default function Account() {

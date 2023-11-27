@@ -1,13 +1,13 @@
 import React, { useRef, useState, useEffect } from 'react'
 
+import { useNavigate } from 'react-router-dom'
 import { Zleep } from '../gltfComponent/index'
 import { useFrame } from '@react-three/fiber'
 import { PerspectiveCamera, Center, ScrollControls, useScroll, Html } from '@react-three/drei'
-import ListBox from '../../ComponentsGeneral/listBox'
-import FeedbackContainer from '../../ComponentsGeneral/feedbackContainer'
-import TextBox from '../../ComponentsGeneral/textBox'
-import TheEnd from '../../ComponentsGeneral/theEnd'
-import { useNavigate } from 'react-router-dom'
+import ListBox from '@/ComponentsGeneral/listBox'
+import FeedbackContainer from '@/ComponentsGeneral/feedbackContainer'
+import TextBox from '@/ComponentsGeneral/textBox'
+import TheEnd from '@/ComponentsGeneral/theEnd'
 
 
 
@@ -49,7 +49,7 @@ export default function Scene() {
     }
   }, []) // Empty array ensures that this effect runs on mount and unmount.
 
-  const mobileView = windowWidth < 768;
+  const mobileView = windowWidth < 768
 
   return (
     <>

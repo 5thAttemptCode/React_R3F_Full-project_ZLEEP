@@ -6,7 +6,7 @@ import { ArrowUpRight } from 'phosphor-react'
 
 export default function TheEnd({ navigate }) {
   return (
-    <div className='the-end section-wrapper'>
+    <div className='the-end'>
       <div>
         <p>Ok that's it, time to</p>
         <br />

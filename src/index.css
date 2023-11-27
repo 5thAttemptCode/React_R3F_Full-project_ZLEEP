@@ -29,6 +29,7 @@ h1{
 h2{
   font-size: clamp(1.375rem, 0.3594rem + 3.25vw, 2.1875rem);
   font-weight: 400;
+  z-index: 100;
 }
 
 h3{
@@ -114,7 +115,7 @@ button:hover{
 
 .scene-box:nth-child(1){
   justify-content: flex-end;
-  padding-bottom: 4vh;
+  padding-bottom: 12vh;
 }
 
 .scene-box > div{
@@ -123,7 +124,7 @@ button:hover{
 
 .scene-box > div p,
 .scene-box > div li{
-  font-size: clamp(1rem, 0.5313rem + 1.5vw, 1.375rem);
+  font-size: clamp(1rem, 0.8438rem + 0.5vw, 1.125rem);
   margin-top: 1em;
   line-height: 1.5;
 }
@@ -135,6 +136,11 @@ button:hover{
 }
 
 @media(max-width: 768px){
+  .scene-box:nth-child(2),
+  .scene-box:nth-child(3),
+  .scene-box:nth-child(4){
+    height: 60vh;
+  }
   .scene-box > div{
       width: 100%;
   }
